@@ -21,12 +21,14 @@ class Kalkulator {
     }
   }
 
-  double sinus(double angle) {
-    return math.sin(angle);
+  double sinus(double angleInDegrees) {
+    double angleInRadians = math.pi * angleInDegrees / 180;
+    return math.sin(angleInRadians);
   }
 
-  double cosinus(double angle) {
-    return math.cos(angle);
+  double cosinus(double angleInDegrees) {
+    double angleInRadians = math.pi * angleInDegrees / 180;
+    return math.cos(angleInRadians);
   }
 
   String getOperationSymbol(String choice) {
